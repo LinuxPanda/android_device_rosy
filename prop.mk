@@ -210,7 +210,7 @@ ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
-sys.use_fifo_ui=1
+sys.use_fifo_ui=0
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
