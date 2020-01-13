@@ -18,8 +18,13 @@
 $(call inherit-product, vendor/xiaomi/rosy/rosy-vendor.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
+# Runtime Resource Overlay
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
