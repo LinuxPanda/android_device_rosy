@@ -7,7 +7,7 @@ Copyright (C) 2017 - The LineageOS Project
 - [x] Camera
 - [x] Flashlight
 - [x] FM Radio
-- [x] GPS
+- [x] GPS (All Modes)
 - [x] Hotspot
 - [x] Offline Charging
 - [x] RIL
@@ -16,8 +16,8 @@ Copyright (C) 2017 - The LineageOS Project
 - [x] VoLTE
 - [x] Wifi
 
-## Not Working:
-- [ ] GPS - Device Only Mode?
+## Bugs:
+None
 
 ## Device specifications
 
@@ -42,3 +42,14 @@ Copyright (C) 2017 - The LineageOS Project
 ## Device Picture
 
 ![Redmi 5](https://i.imgur.com/Dx9SAeS.jpg "Redmi 5")
+
+## Cloning
+##### Shallow Clone
+If you're just cloning it just for building, then use the following command to save bandwidth & space.
+
+`git clone --single-branch --depth=1 https://github.com/LinuxPanda/android_device_xiaomi_rosy.git -b 9`
+
+##### Full Clone
+If you need the entire commit history, then the usual single branch clone command.
+
+`git clone --single-branch https://github.com/LinuxPanda/android_device_xiaomi_rosy.git -b 9`
