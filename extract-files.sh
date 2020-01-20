@@ -64,4 +64,8 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+### Hax for cam configs ###
+# Always set 0 (Off) as CDS mode in iface_util_set_cds_mode
+sed -i -e "s|\xfd\xb1\x20\x68|\xfd\xb1\x00\x20|g" "$DEVICE_BLOB_ROOT"/vendor/lib/libmmcamera2_iface_modules.so
+
 "$MY_DIR"/setup-makefiles.sh
